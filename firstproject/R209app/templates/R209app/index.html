@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{%static 'R209app/index.css'%}">
+    <title>index</title>
+</head>
+<body>
+<h1> BIENVENUE AU MUSEE ! </h1>
+<p> Ici vous pourrez trouvé un large pannel de tableaux des plus célèbres peintres, ainsi vous pouvez ajouter une oeuvre si vous ne trouvez pas celle qui vous convient. </p>
+<a href="/R209app/ajout"> Ajout d'une nouvelle oeuvre au musée </a>
+<ol>
+        {% for l in liste %}
+            <li> {{l}} <a href="/R209app/affiche/{{l.id}}"> Affiché les détails de l'oeuvre </a> <a href="/R209app/update/{{l.id}}"> Mettre a jour l'oeuvre </a> <a href="/R209app/delete/{{l.id}}"> Supprimé une oeuvre </a> </br>
+            </li>
+        {%endfor%}
+</ol>
+</body>
+</html>

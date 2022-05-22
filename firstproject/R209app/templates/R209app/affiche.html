@@ -1,0 +1,13 @@
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{%static 'R209app/affiche.css'%}">
+    <title>affichage d'un tableaux</title>
+</head>
+<body>
+    <p>{{tableaux}} paru le {{tableaux.date_parution}} par {{tableaux.peintre}} </p>
+    <a href="/R209app/index/{{l.id}}"> Revenir a l'accueil</a>
+</body>
+</html>

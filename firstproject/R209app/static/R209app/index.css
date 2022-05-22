@@ -1,0 +1,30 @@
+h1 {
+    font-style: italic;
+}
+
+li {
+    margin-bottom: 19px;
+}
+
+a {
+    border: solid 1px black;
+    font-size: 0.90rem;
+    text-align: center;
+    padding: 10px 20px 0;
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    margin-left: 0.90%;
+    border-radius: 30px;
+}
+
+body {
+  text-align: center;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+ol {
+  list-style-type: none;
+}
+

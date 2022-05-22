@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{%static 'R209app/ajout.css'%}">
+    <title>Ajout d'un tableaux (oeuvre d'art) :</title>
+</head>
+<body>
+  <h1> Ajout d'un tableaux :</h1>
+    <p> Donner ci-dessous les informations concernant l'oeuvre que vous voulez renseignez.</p>
+     {% if id != '' %}
+        <form method="post" action="/R209app/updatetraitement/{{id}}/">
+      {% else %}
+          <form method="post" action="/R209app/traitement/">
+      {% endif %}
+     {% csrf_token %}
+     {{ form.as_ul }}
+     <input type="submit" value="envoyer␣les␣données"/>
+  </form>
+</body>
+</html>
