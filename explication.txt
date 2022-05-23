@@ -1,0 +1,5 @@
+explication : 
+
+Ici vous trouverez le R209projet.7z qui es le 1er CRUD complètement fonctionnel avec du CSS basique et du HTML.
+Vous trouverez également le R209projettest.7z qui es un test de 2eme CRUD avec le 1er CRUD, le 2eme CRUD n'est pas fonctionnel 
+mais les fichiers du views et du views du second CRUD sont présent. 
